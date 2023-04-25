@@ -1,0 +1,24 @@
+pilha_paginas = []
+
+def remover_ultima():
+    pilha_paginas.pop()
+
+# exemplo de uso
+pilha_paginas.append('https://www.google.com')
+pilha_paginas.append('https://www.youtube.com')
+remover_ultima()
+print(pilha_paginas)
+
+pilha_numeros = []
+
+def adicionar_topo(num):
+    pilha_numeros.append(num)
+
+def remover_topo():
+    pilha_numeros.pop()
+
+# exemplo de uso
+adicionar_topo(10)
+adicionar_topo(20)
+remover_topo()
+print(pilha_numeros)
