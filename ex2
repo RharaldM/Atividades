@@ -1,0 +1,28 @@
+from collections import deque
+
+fila = deque()
+
+def remover_primeira():
+    fila.popleft()
+
+# exemplo de uso
+fila.append('João')
+fila.append('Maria')
+remover_primeira()
+print(fila)
+
+from collections import deque
+
+fila_numeros = deque()
+
+def adicionar_final(num):
+    fila_numeros.append(num)
+
+def remover_primeiro():
+    fila_numeros.popleft()
+
+# exemplo de uso
+adicionar_final(10)
+adicionar_final(20)
+remover_primeiro()
+print(fila_numeros)
